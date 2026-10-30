@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<meta name="theme-color" content="#07070d" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="description" content="War Guild II: Shadow Monarch. A touch-first dark fantasy action RPG. Slay. Raise. Command." />
+<title>War Guild II — Shadow Monarch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<svg class="svg-defs" aria-hidden="true">
+  <defs>
+    <symbol id="i-skull" viewBox="0 0 24 24"><path d="M12 2.7c-4.6 0-8.2 3.4-8.2 7.9 0 2.8 1.3 5 3.5 6.4v3.1c0 .6.5 1.1 1.1 1.1h1.1v-2.6h1.9v2.6h1.2v-2.6h1.9v2.6h1.1c.6 0 1.1-.5 1.1-1.1V17c2.2-1.4 3.5-3.6 3.5-6.4 0-4.5-3.6-7.9-8.2-7.9Zm-3.1 8.1a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm6.2 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm-3.1 2.1 1.2 2.1h-2.4l1.2-2.1Z"/></symbol>
+    <symbol id="i-swords" viewBox="0 0 24 24"><path d="m3.1 4.2 6.1.8 2.7 6-1.7 1.7-6-2.7-.8-6.1 4 4 1.5-.6-1.9-1.9-1.8-.2-1.4-1.4 1.4-1.4 1.4 1.8Zm17.8 0-1.4-1.8-1.4 1.4-1.8.2-1.9 1.9 1.5.6 4-4-.8 6.1-6 2.7-1.7-1.7 2.7-6 6.1-.8-1.3 1.4ZM8.6 16.1l-1.4-1.4 7.8-7.8 1.4 1.4-7.8 7.8Zm.1 1.7 2 2-1.4 1.4-2-2-2.6 2.6H2.8v-2l2.6-2.6-2-2L4.8 14l2 2 1.9-1.9Z"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="m2.5 6.4 4.8 4.1L12 3.8l4.7 6.7 4.8-4.1-2 12.1H4.5l-2-12.1Zm3.3 10.1h12.4l.7-4.3-2.8 2.4-4.1-5.8-4.1 5.8-2.8-2.4.7 4.3Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13.2l-4.9-4.9L15 5.4 22.1 12 15 18.6l-1.7-1.7 4.9-4.9H5v-1Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4.5h3.6v15H7v-15Zm6.4 0H17v15h-3.6v-15Z"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.2v5.6h3.5l4.6 3.9V5.3L7.5 9.2H4Zm10.8-1.9a6.2 6.2 0 0 1 0 9.4l1.3 1.5a8.2 8.2 0 0 0 0-12.4l-1.3 1.5Zm2.7-3.1a10.2 10.2 0 0 1 0 15.6l1.4 1.5a12.2 12.2 0 0 0 0-18.6l-1.4 1.5Z"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.2v5.6h3.5l4.6 3.9V5.3L7.5 9.2H4Zm11.4.9-1.5 1.5 2.4 2.4-2.4 2.4 1.5 1.5 2.4-2.4 2.4 2.4 1.5-1.5-2.4-2.4 2.4-2.4-1.5-1.5-2.4 2.4-2.4-2.4Z"/></symbol>
+    <symbol id="i-step" viewBox="0 0 24 24"><path d="M13.5 2.8 6.2 12.1h4.5l-1.2 9.1 8.7-11.3h-5.3l.6-7.1Z"/></symbol>
+    <symbol id="i-nova" viewBox="0 0 24 24"><path d="m12 1.8 1.7 6.4 5.2-4-2.6 6 6.1 1.8-6.1 1.7 2.6 6-5.2-4-1.7 6.5-1.7-6.5-5.2 4 2.6-6-6.1-1.7 6.1-1.8-2.6-6 5.2 4L12 1.8Z"/></symbol>
+    <symbol id="i-domain" viewBox="0 0 24 24"><path d="M12 2.4 3.2 7.2v3l8.8 4.8 8.8-4.8v-3L12 2.4Zm0 2.3 6.8 3.7-6.8 3.8-6.8-3.8L12 4.7Zm8.8 8.5-8.8 4.8-8.8-4.8v3l8.8 4.8 8.8-4.8v-3Zm0 5.7-8.8 4.8-8.8-4.8v2.5l8.8 4.8 8.8-4.8v-2.5Z"/></symbol>
+    <symbol id="i-raise" viewBox="0 0 24 24"><path d="M12 2.2 4.2 7.6v8.8L12 21.8l7.8-5.4V7.6L12 2.2Zm0 2.7 5.5 3.8v6.6L12 19.1l-5.5-3.8V8.7L12 4.9Zm0 2.2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-4.3 7.5c.7 1.1 2.3 1.9 4.3 1.9s3.6-.8 4.3-1.9l1.6 1.1c-1.1 1.7-3.3 2.8-5.9 2.8s-4.8-1.1-5.9-2.8l1.6-1.1Z"/></symbol>
+    <symbol id="i-tilt" viewBox="0 0 24 24"><path d="M8.3 2.3h7.4c1 0 1.8.8 1.8 1.8v15.8c0 1-.8 1.8-1.8 1.8H8.3c-1 0-1.8-.8-1.8-1.8V4.1c0-1 .8-1.8 1.8-1.8Zm.2 2v14.4h7V4.3h-7Zm4.7 12.1a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2ZM2 9.2l2.1 2.8L2 14.8V9.2Zm20 0v5.6l-2.1-2.8L22 9.2Z"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><path d="m9.8 2 .6 2.3c.5.1 1 .3 1.5.5l1.8-1.5 2.9 2.9-1.5 1.8c.2.5.4 1 .5 1.5l2.3.6v4.1l-2.3.6c-.1.5-.3 1-.5 1.5l1.5 1.8-2.9 2.9-1.8-1.5c-.5.2-1 .4-1.5.5l-.6 2.3H8l-.6-2.3c-.5-.1-1-.3-1.5-.5l-1.8 1.5L1.2 17l1.5-1.8c-.2-.5-.4-1-.5-1.5L0 13.1V9l2.3-.6c.1-.5.3-1 .5-1.5L1.2 5.1 4.1 2.2l1.8 1.5c.5-.2 1-.4 1.5-.5L8 2h1.8ZM9 6.6A2.4 2.4 0 1 0 9 11.4 2.4 2.4 0 0 0 9 6.6Z" transform="translate(3 0)"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 2.5h2.1v19H5v-19Zm3.6 1.2h10.9l-2.2 4.6 2.2 4.6H8.6V3.7Zm2.1 2V10h5.7l-.9-1.8.9-1.8h-5.7Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21.2 3.9 13A5.7 5.7 0 0 1 12 5.1 5.7 5.7 0 0 1 20.1 13L12 21.2Z"/></symbol>
+  </defs>
+</svg>
+
+<div id="app">
+  <canvas id="gameCanvas" aria-label="War Guild II battlefield"></canvas>
+  <div class="screen-fx" aria-hidden="true"><i class="fx-vignette"></i><i class="fx-grain"></i><i class="fx-scan"></i></div>
+
+  <!-- ══════════════ TITLE ══════════════ -->
+  <section id="titleScreen" class="title-screen">
+    <header class="title-top">
+      <a class="brand" href="#" aria-label="War Guild II home">
+        <span class="brand-sigil"><svg><use href="#i-swords"/></svg></span>
+        <span class="brand-type">WAR GUILD <b>II</b><small>THE OBSIDIAN COURT</small></span>
+      </a>
+      <div class="title-season"><span>SEASON I</span><i></i><span>THE SHADOW WAR</span></div>
+      <button id="titleSound" class="round-btn" type="button" aria-label="Toggle sound"><svg><use href="#i-sound"/></svg></button>
+    </header>
+
+    <main class="title-main">
+      <div class="title-copy">
+        <div class="eyebrow"><i></i> THE SHADOW MONARCH AWAKENS <i></i></div>
+        <h1><span class="line-one">SHADOW</span><span class="line-two">MONARCH</span></h1>
+        <p class="lede">The gate has opened. The guilds are at war. <em>Death is only the beginning.</em></p>
+
+        <div class="class-card">
+          <div class="class-glyph"><svg><use href="#i-skull"/></svg><span></span></div>
+          <div class="class-info">
+            <span class="micro-label">NECROMANCER · MONARCH CLASS</span>
+            <strong>Army of the Dead</strong>
+            <p>Slay the living. Raise the fallen. Command an army that never truly dies.</p>
+          </div>
+          <div class="class-meta">
+            <span><b>VIII</b> LEGION</span>
+            <span><b>∞</b> BOUND</span>
+          </div>
+        </div>
+
+        <div class="title-actions">
+          <button id="startBtn" class="btn-primary" type="button" aria-label="Start game">
+            <span class="btn-glow"></span>
+            <span class="btn-label">ENTER THE GATE</span>
+            <span class="btn-icon"><svg><use href="#i-arrow"/></svg></span>
+          </button>
+          <button id="howBtn" class="btn-ghost" type="button"><span>HOW TO PLAY</span></button>
+        </div>
+
+        <div class="feature-strip">
+          <span><i class="dot"></i> TOUCH-FIRST</span>
+          <span><i class="dot"></i> TILT OPTIONAL</span>
+          <span><i class="dot"></i> AUTO-ATTACK</span>
+          <span><i class="dot"></i> RAISE THE DEAD</span>
+        </div>
+      </div>
+
+      <aside class="title-side" aria-hidden="true">
+        <div class="side-mark"><span>THE</span><b>EIGHT</b><span>LEGION</span></div>
+        <div class="side-rule"></div>
+        <div class="side-stat"><span>RECLAIMED SOULS</span><b>1,284,601</b></div>
+        <div class="side-stat"><span>GUILDS FELLED</span><b>47</b></div>
+        <div class="side-quote">“I am not the one who rises.<br>I am the one who <em>commands</em>.”</div>
+      </aside>
+    </main>
+
+    <footer class="title-footer">
+      <div class="footer-hint"><span class="live-dot"></span> <span id="bestRecord">NO RECORD YET</span></div>
+      <div class="footer-credit">A WAR GUILD CHRONICLE · BUILT FOR PHONE &amp; TABLET</div>
+      <div class="footer-version">BUILD 2.0.7 <span>·</span> SHADOW MONARCH</div>
+    </footer>
+  </section>
+
+  <!-- ══════════════ HUD ══════════════ -->
+  <section id="hud" class="hud is-hidden" aria-label="Battle interface">
+    <header class="hud-top">
+      <div class="player-panel">
+        <div class="player-avatar">
+          <svg><use href="#i-skull"/></svg>
+          <span id="levelBadge">1</span>
+        </div>
+        <div class="player-vitals">
+          <div class="vitals-name"><span>SHADOW MONARCH</span><b id="levelText">LV 1</b></div>
+          <div class="vital-bar hp"><i id="hpFill"></i><span id="hpText">100 / 100</span></div>
+          <div class="vital-bar mana"><i id="manaFill"></i><span id="manaText">100</span></div>
+        </div>
+      </div>
+
+      <div class="wave-panel">
+        <span class="wave-kicker">GUILD ASSAULT</span>
+        <div class="wave-line"><span>WAVE</span><b id="waveNum">01</b><em>/ 05</em></div>
+        <div class="wave-track"><i id="waveFill"></i></div>
+        <span id="waveSub" class="wave-sub">THE IRONFOOT CLAN</span>
+      </div>
+
+      <div class="hud-actions">
+        <div class="relic-mini" title="Guild relic integrity">
+          <svg><use href="#i-flag"/></svg>
+          <div><span>RELIC</span><b id="relicText">100%</b></div>
+          <div class="relic-track"><i id="relicFill"></i></div>
+        </div>
+        <button id="hudSound" class="hud-btn" type="button" aria-label="Toggle sound"><svg><use href="#i-sound"/></svg></button>
+        <button id="pauseBtn" class="hud-btn" type="button" aria-label="Pause game"><svg><use href="#i-pause"/></svg></button>
+      </div>
+    </header>
+
+    <div id="bossBar" class="boss-bar is-hidden">
+      <div class="boss-head"><span id="bossName">DREAD KNIGHT VAREK</span><em>GUILD CHAMPION</em></div>
+      <div class="boss-track"><i id="bossFill"></i></div>
+    </div>
+
+    <div id="levelBanner" class="level-banner is-hidden">
+      <span>MONARCH'S POWER GROWS</span><b>LEVEL <em id="levelBannerNum">2</em></b>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div class="battle-hint" id="battleHint">
+      <span class="hint-line"></span>
+      <span>HOLD THE RELIC · HARVEST THE FALLEN · <b>ARISE</b></span>
+      <span class="hint-line"></span>
+    </div>
+
+    <div id="joystick" class="joystick" aria-label="Movement stick">
+      <div class="joy-ring"><i></i><i></i><i></i><i></i></div>
+      <div id="joyKnob" class="joy-knob"><svg><use href="#i-swords"/></svg></div>
+      <span class="joy-label">MOVE</span>
+    </div>
+
+    <div id="armyPanel" class="army-panel">
+      <div class="army-title"><span>SHADOW ARMY</span><b><em id="armyCount">0</em> / <em id="armyMax">6</em></b></div>
+      <div id="armyPips" class="army-pips"></div>
+      <div id="arisePrompt" class="arise-prompt"><span>SOULS READY</span><b id="corpseCount">0</b></div>
+    </div>
+
+    <div id="skillBar" class="skill-bar">
+      <button class="skill" type="button" data-skill="arise" aria-label="Arise: raise fallen enemies">
+        <span class="skill-ring"></span>
+        <span class="skill-art"><svg><use href="#i-raise"/></svg></span>
+        <span class="skill-cd"></span>
+        <span class="skill-key">1</span>
+        <span class="skill-name">ARISE</span>
+        <span class="skill-cost">30</span>
+      </button>
+      <button class="skill" type="button" data-skill="step" aria-label="Shadow step">
+        <span class="skill-ring"></span>
+        <span class="skill-art"><svg><use href="#i-step"/></svg></span>
+        <span class="skill-cd"></span>
+        <span class="skill-key">2</span>
+        <span class="skill-name">STEP</span>
+        <span class="skill-cost">12</span>
+      </button>
+      <button class="skill" type="button" data-skill="nova" aria-label="Death nova">
+        <span class="skill-ring"></span>
+        <span class="skill-art"><svg><use href="#i-nova"/></svg></span>
+        <span class="skill-cd"></span>
+        <span class="skill-key">3</span>
+        <span class="skill-name">NOVA</span>
+        <span class="skill-cost">30</span>
+      </button>
+      <button class="skill" type="button" data-skill="domain" aria-label="Monarch's domain">
+        <span class="skill-ring"></span>
+        <span class="skill-art"><svg><use href="#i-domain"/></svg></span>
+        <span class="skill-cd"></span>
+        <span class="skill-key">4</span>
+        <span class="skill-name">DOMAIN</span>
+        <span class="skill-cost">45</span>
+      </button>
+    </div>
+
+    <div class="control-note" id="controlNote"><i></i><span>TILT OFF</span></div>
+  </section>
+
+  <!-- ══════════════ PAUSE ══════════════ -->
+  <section id="pauseScreen" class="modal-screen is-hidden" aria-label="Pause menu">
+    <div class="modal-panel pause-panel">
+      <span class="modal-kicker">THE BATTLE WAITS</span>
+      <h2>PAUSED</h2>
+      <div class="modal-rule"></div>
+      <div class="settings-list">
+        <button id="soundToggle" class="setting-row" type="button">
+          <span class="setting-icon"><svg><use href="#i-sound"/></svg></span>
+          <span class="setting-copy"><b>SOUND</b><small>Ambience &amp; combat audio</small></span>
+          <span class="toggle is-on"><i></i></span>
+        </button>
+        <button id="tiltToggle" class="setting-row" type="button">
+          <span class="setting-icon"><svg><use href="#i-tilt"/></svg></span>
+          <span class="setting-copy"><b>TILT CONTROLS</b><small id="tiltDesc">Use device motion to move</small></span>
+          <span class="toggle"><i></i></span>
+        </button>
+        <button id="calibrateBtn" class="setting-row sub-setting is-hidden" type="button">
+          <span class="setting-icon small"><svg><use href="#i-gear"/></svg></span>
+          <span class="setting-copy"><b>CALIBRATE TILT</b><small>Hold device comfortably, then tap</small></span>
+          <span class="calibrate-arrow">↻</span>
+        </button>
+      </div>
+      <p class="tilt-note" id="tiltNote">Optional. Tilt is disabled until you turn it on. iOS will ask for motion permission.</p>
+      <div class="pause-actions">
+        <button id="resumeBtn" class="btn-primary compact" type="button"><span class="btn-label">RESUME BATTLE</span><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span></button>
+        <div class="pause-row">
+          <button id="restartBtn" class="btn-ghost" type="button">RESTART</button>
+          <button id="quitBtn" class="btn-ghost danger" type="button">ABANDON RUN</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ HOW TO PLAY ══════════════ -->
+  <section id="howScreen" class="modal-screen is-hidden" aria-label="How to play">
+    <div class="modal-panel how-panel">
+      <button id="howClose" class="modal-close" type="button" aria-label="Close">×</button>
+      <span class="modal-kicker">FIELD MANUAL</span>
+      <h2>COMMAND THE DEAD</h2>
+      <div class="modal-rule"></div>
+      <div class="how-grid">
+        <article><span class="how-no">01</span><h3>MOVE</h3><p>Drag the left stick or tilt your device. On desktop, use WASD or the arrow keys.</p></article>
+        <article><span class="how-no">02</span><h3>SLAY</h3><p>Your staff attacks the nearest enemy automatically. Keep moving and keep the relic alive.</p></article>
+        <article><span class="how-no">03</span><h3>ARISE</h3><p>Fallen enemies leave souls. Stand near them and tap <b>ARISE</b> to bind them to your shadow army.</p></article>
+        <article><span class="how-no">04</span><h3>COMMAND</h3><p>Shadows fight on their own. Use <b>STEP</b>, <b>NOVA</b> and <b>DOMAIN</b> to break the assault.</p></article>
+      </div>
+      <div class="how-tip"><svg><use href="#i-tilt"/></svg><span><b>ON iPHONE / iPAD</b> Tilt controls ask for motion permission only when you enable them in the pause menu.</span></div>
+      <button id="howDone" class="btn-primary compact" type="button"><span class="btn-label">UNDERSTOOD</span><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span></button>
+    </div>
+  </section>
+
+  <!-- ══════════════ END ══════════════ -->
+  <section id="endScreen" class="modal-screen is-hidden" aria-label="Run results">
+    <div class="modal-panel end-panel">
+      <span class="modal-kicker" id="endKicker">THE GATE FALLS SILENT</span>
+      <h2 id="endTitle">VICTORY</h2>
+      <p id="endCopy">The Shadow Monarch claims another guild.</p>
+      <div class="end-stats">
+        <div><span>WAVE</span><b id="endWave">5</b></div>
+        <div><span>KILLS</span><b id="endKills">0</b></div>
+        <div><span>RAISED</span><b id="endRaised">0</b></div>
+        <div><span>TIME</span><b id="endTime">0:00</b></div>
+      </div>
+      <div class="end-best" id="endBest">NEW PERSONAL RECORD</div>
+      <div class="pause-actions">
+        <button id="againBtn" class="btn-primary compact" type="button"><span class="btn-label">RISE AGAIN</span><span class="btn-icon"><svg><use href="#i-arrow"/></svg></span></button>
+        <button id="hallBtn" class="btn-ghost" type="button">RETURN TO HALL</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="rotateHint" class="rotate-hint">
+    <svg><use href="#i-tilt"/></svg>
+    <span>ROTATE FOR THE FULL BATTLEFIELD</span>
+    <small>The game also plays in portrait.</small>
+  </div>
+</div>
+
+<script src="js/core.js"></script>
+<script src="js/art.js"></script>
+<script src="js/game.js"></script>
+<script src="js/combat.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
